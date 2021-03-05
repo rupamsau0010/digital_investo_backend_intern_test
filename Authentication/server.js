@@ -8,7 +8,6 @@ const cookieParser = require("cookie-parser");
 // Import local depandencies
 const mongoConnect = require("./configs/mongoDB")
 const authRoutes = require("./routes/authRoutes")
-const { requireAuth } = require(".//middlewares/authMiddleware")
 
 // Import express middlewares
 app.use(express.json())

@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 
 // Import local depandencies
 
+
 // Middleware for Protecting routes...
 const requireAuth = (req, res, next) => {
     const token = req.cookies.jwt;
