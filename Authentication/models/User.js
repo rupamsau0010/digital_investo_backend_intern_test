@@ -20,6 +20,9 @@ const userSchema = new mongoose.Schema({
     },
     phoneNo: {
         type: String,
+        required: [true, "Please Enter a Valid Phone Number"],
+        minlength: [10, "Please Enter a Valid Phone Number"],
+        maxlength: [10, "Please Enter a Valid Phone Number"],
         unique: true,
     },
     password: {
